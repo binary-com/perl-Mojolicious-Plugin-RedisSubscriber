@@ -1,5 +1,6 @@
 use Test::Most;
 use Test::FailWarnings;
+use lib 't';
 
 use Cache::RedisDB;
 use RedisServer;
