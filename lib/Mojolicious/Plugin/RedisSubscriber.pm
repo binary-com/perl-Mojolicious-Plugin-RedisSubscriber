@@ -67,6 +67,10 @@ Module provides the following methods:
 
 =cut
 
+=head2 $self->channel_hash
+
+Returns the underlying subscriber object.
+
 =head2 $self->channels
 
 Returns reference to list of channel names to which redis is subscribed.
@@ -77,6 +81,10 @@ sub channels {
     my $self = shift;
     return [keys %{$self->channel_hash}];
 }
+
+=head2 $self->redis
+
+returns the underlying redis server object.
 
 =head2 $self->subscribe($channel => $callback)
 
