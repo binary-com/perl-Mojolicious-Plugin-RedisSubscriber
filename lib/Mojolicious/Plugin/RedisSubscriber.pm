@@ -11,6 +11,8 @@ use Try::Tiny;
 
 our $VERSION = "0.0.1";
 
+# ABSTRACT: Module subscribes to specified channels and emits events when there are messages.
+
 =head1 NAME
 
 Mojolicious::Plugin::RedisSubscriber
