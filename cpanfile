@@ -7,7 +7,7 @@ requires 'YAML::XS';
 requires 'perl', '5.006';
 
 on configure => sub {
-    requires 'ExtUtils::MakeMaker', "7.1101";
+    requires 'ExtUtils::MakeMaker';
 };
 
 on build => sub {
