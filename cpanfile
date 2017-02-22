@@ -1,4 +1,4 @@
-requires 'Cache::RedisDB', '== 0.10';
+requires 'Cache::RedisDB';
 requires 'Mojo::EventEmitter';
 requires 'Mojo::Redis';
 requires 'Mojolicious';
