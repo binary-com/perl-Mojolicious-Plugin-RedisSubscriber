@@ -11,6 +11,8 @@ use Try::Tiny;
 
 our $VERSION = "0.0.1";
 
+# ABSTRACT: Module subscribes to specified channels and emits events when there are messages.
+
 =head1 NAME
 
 Mojolicious::Plugin::RedisSubscriber
@@ -37,7 +39,7 @@ has redis => sub {
     $_subscribe = sub {
         my $channels = shift;
         my $subs     = Mojo::Redis::Subscription->new(
-            server   => Cache::RedisDB->redis_server_info,
+            server   => Cache::RedisDB->redis_uri,
             channels => $self->channels,
             encoding => '',
             timeout  => 300,
